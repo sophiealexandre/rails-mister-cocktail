@@ -1,0 +1,14 @@
+<h1>Cocktails</h1>
+
+<div class="cards">
+
+<% @cocktails.each do |cocktail| %>
+  <div class="cards" style="background-image: url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    <p><%= link_to cocktail.name, cocktail_path(cocktail) %><p>
+  </div>
+<% end %>
+
+
+
+</div>
+<p><%= link_to "add new cocktail", new_cocktail_path %></p>
